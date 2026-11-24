@@ -1,0 +1,77 @@
+name: riderfrontend
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.13.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bluetooth_serial_plus: ^0.5.7
+  flutter_map: ^8.3.2
+  flutter_secure_storage: ^11.2.0
+  flutter_svg: ^2.2.3
+  google_mlkit_text_recognition: ^1.0.3
+  http: ^1.6.0
+  image_picker: ^1.2.0
+  latlong2: ^0.10.1
+  location: ^10.2.0
+  path_provider: ^2.1.5
+  pdf: ^3.13.1
+  qr_flutter: ^4.1.0
+  share_plus: ^13.3.1
+  shared_preferences: ^2.5.3
+  url_launcher: ^6.3.2
+  web: 1.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/icon/app_icon.png
+  min_sdk_android: 21
+  remove_alpha_ios: true
+  background_color_ios: "#0A6CD8"
+  adaptive_icon_background: "#0A6CD8"
+  adaptive_icon_foreground: assets/icon/app_icon.png
+  adaptive_icon_foreground_inset: 0
+  web:
+    generate: true
+    image_path: assets/icon/app_icon.png
+    background_color: "#0A6CD8"
+    theme_color: "#0A6CD8"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/AquaRider Water Droplet Emblem.png
+    - assets/icon/app_icon.png
+    - assets/login/
+    - assets/splash/
+    - assets/location/
+    - assets/welcome/
+    - assets/home/
+    - assets/customer_home/images/
+    - assets/customer_home/icons/
+    - assets/customer_home/branding/
+    - assets/customer_home/payments/
+    - assets/customer_home/schedule/
+    - assets/rider_settings/
+    - assets/rider_settings/icons/
+  fonts:
+    - family: Noto Sans
+      fonts:
+        - asset: assets/fonts/NotoSans-Regular.ttf
+        - asset: assets/fonts/NotoSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/NotoSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/NotoSans-Bold.ttf
+          weight: 700

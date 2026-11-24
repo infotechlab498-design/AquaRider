@@ -1,0 +1,24 @@
+abstract final class AdminNav {
+  static const dashboard = 'adminDashboard';
+  static const liveTrackboard = 'liveTrackboard';
+  static const manifests = 'routeManifests';
+  static const audits = 'inventoryAudits';
+  static const checklist = 'setupChecklist';
+  static const fleet = 'fleetCouriers';
+  static const dispatch = 'dispatchOrders';
+  static const recurringSchedules = 'recurringSchedules';
+  static const dayClose = 'dayCloseRecon';
+  static const shiftRecords = 'shiftRecords';
+  static const basePricing = 'basePricing';
+  static const zonesRoutes = 'zonesRoutes';
+  static const customersParties = 'customersParties';
+  static const customerAccounts = 'customerAccounts';
+  static const usersStaff = 'usersStaff';
+  static const branchesWarehouses = 'branchesWarehouses';
+  static const salesManagement = 'salesManagement';
+  static const collectionsManagement = 'collectionsManagement';
+  static const reportsAnalytics = 'reportsAnalytics';
+  static const communication = 'communicationSms';
+  static const securityAudit = 'securityAudit';
+  static const settings = 'hqSettings';
+}

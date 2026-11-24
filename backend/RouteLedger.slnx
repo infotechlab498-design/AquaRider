@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/Application.Api/">
+    <Project Path="Application.Api/RouteLedger.Api.csproj" />
+  </Folder>
+  <Folder Name="/Application.Application/">
+    <Project Path="Application.Application/RouteLedger.Application.csproj" />
+  </Folder>
+  <Folder Name="/Application.Domain/">
+    <Project Path="Application.Domain/RouteLedger.Domain.csproj" />
+  </Folder>
+  <Folder Name="/Application.Infrastructure/">
+    <Project Path="Application.Infrastructure/RouteLedger.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Application.Tests/">
+    <Project Path="Application.Tests/RouteLedger.Tests.csproj" />
+  </Folder>
+</Solution>

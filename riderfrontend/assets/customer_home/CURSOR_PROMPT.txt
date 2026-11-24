@@ -1,0 +1,41 @@
+CURSOR IMPLEMENTATION PROMPT — AQUARIDER CUSTOMER HOME
+
+Redesign the existing AQUARIDER Customer App Home screen to match a premium, calm, water-delivery visual language. First inspect the current app framework, routing, theme, and existing reusable components. Do not change business logic, API contracts, navigation destinations, or data models. Reuse existing data and actions.
+
+ASSETS (use these exact filenames from assets/images, assets/icons, assets/branding):
+- Background: customer_home_header_bg.png, customer_home_bg.png, customer_home_footer_wave.png
+- Header illustration: water_jugs_header.png
+- No-active-schedule illustration: schedule_delivery_illustration.png
+- Payments illustration: payments_wallet_illustration.png
+- Bottle quantity illustration: bottle_quantity_illustration.png
+- Brand: aquarider_logo.png, aquarider_app_icon.png
+- UI icons: ic_user.png, ic_notification.png, ic_schedule.png, ic_payments.png, ic_profile.png, ic_home.png, ic_home_active.png, ic_truck.png, ic_check.png, ic_calendar.png, ic_minus.png, ic_history.png, ic_pause.png, ic_schedule_edit.png, ic_requests.png, ic_location.png, ic_arrow_right.png, ic_info.png, ic_water_drop.png, ic_coins.png
+
+LAYOUT / SPACING (mobile-first):
+1. Use a single vertically scrollable page. Respect status bar and bottom safe area. Use 16dp horizontal page padding; 12–16dp vertical gaps; 20–24dp card radius; 1dp subtle cool-grey border; soft low-opacity shadow only where needed.
+2. Header: place logo/name at top-left and notification/avatar actions at top-right. Use customer_home_header_bg.png as a subtle top background, and water_jugs_header.png on the right with contain fit. Keep all text on a clear, high-contrast area.
+3. Greeting: display “Hello, {customerName}” as the main heading, then a short supportive subtitle. Do not hardcode sample names.
+4. Customer identity card: show customer ID, account status, active schedule count, and service city. Use a small status chip; never rely on color alone.
+5. No-active-schedule card: when schedule count is zero, show schedule_delivery_illustration.png on one side, concise empty-state copy, and a full-width “View Schedule” primary CTA. If a schedule exists, replace this with a compact upcoming-delivery card and do not show the empty state.
+6. KPI grid: two columns on phones; show Total Deliveries, Completed, Upcoming, Skipped/Missed. Each tile uses a small icon, prominent numeric value, and concise label. Use stat backgrounds only if they remain subtle and readable.
+7. Payments card: show Billed, Paid, Outstanding in aligned rows; include payments_wallet_illustration.png only if there is enough space. Add a secondary “View Payments” action.
+8. Quick actions: two-column grid for View Schedule, Delivery History, Request Schedule Change, Pause Deliveries, My Requests, Address Change. Add a separate full-width Change Bottle Quantity action with bottle_quantity_illustration.png as a small supporting visual. Ensure each tile has a clear icon, label, and minimum 48dp tap target.
+9. Upcoming delivery panel: show the next delivery date/time, status, and address only when a delivery exists. Otherwise show a calm one-line empty state.
+10. Bottom navigation: fixed safe-area-aware bar with Home, Schedule, Payments, Profile. Active tab uses a pale-blue pill and blue icon/text. Do not cover scroll content; add bottom content inset.
+
+VISUAL SYSTEM:
+- Font family: Inter (fallback Roboto / system sans-serif).
+- Main heading 28–30sp, weight 700; section headings 18–20sp, weight 650/700; card titles 16sp, weight 600; body 14–15sp, weight 400; metadata 12–13sp, weight 400/500; KPI numbers 26–30sp, weight 700.
+- Palette: navy #10233F, primary blue #1266D5, aqua #21B8E8, pale background #F2F8FE, surface #FFFFFF, muted text #64748B, success #168653, warning #D97706, danger #DC4545, border #DCE8F4.
+- Use customer_home_bg.png as the light page background. Use customer_home_footer_wave.png only as a decorative bottom layer behind the navigation, with low visual prominence. Avoid placing text directly over busy water art.
+- Use rounded surfaces, consistent 8dp spacing increments, restrained gradients, and clear typographic hierarchy. Avoid excessive glassmorphism, thick borders, oversized shadows, and excessive blue fills.
+
+RESPONSIVENESS / ACCESSIBILITY:
+- At 320–360dp, stack content and keep buttons full width; at 375–430dp use two-column KPI and quick-action grids; at tablets cap content width around 680dp and center it.
+- Keep contrast accessible, support dynamic text scaling, semantic labels, and touch targets >=48dp. Icons must have text labels where meaning is not obvious.
+- Ensure images use contain/cover appropriately, preserve aspect ratio, and never stretch. Provide graceful fallback if an asset is missing.
+
+IMPLEMENTATION REQUIREMENTS:
+- First identify the exact home-screen component and styling files. Then implement in the existing architecture and reuse current components. Do not create duplicate screens or unused assets.
+- Keep API-driven values dynamic and show loading, empty, and error states. Do not fabricate customer metrics or schedule data.
+- Run the project’s formatter, analyzer/linter, and relevant tests. Report changed files and any remaining blockers.

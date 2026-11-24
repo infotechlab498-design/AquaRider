@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Connected Route Nodes SVG Symbol">
+<path id="Vector" d="M10 30L18.3333 18.3333L28.3333 21.6667L31.6667 10" stroke-width="2.91667" stroke-linecap="round" stroke-linejoin="round" stroke="#1565C0"/>
+<path id="Vector_2" opacity="0.7" d="M10 30L11.1458 29.4792M28.3333 21.6667L27.1875 22.1875M13.4375 28.4375L15.7292 27.3958M18.0208 26.3542L20.3125 25.3125M22.6042 24.2708L24.8958 23.2292" stroke-width="1.66667" stroke-linecap="round" stroke="#4FDBC8"/>
+<path id="Vector_3" d="M6.25 30C6.25 32.0697 7.93032 33.75 10 33.75C12.0697 33.75 13.75 32.0697 13.75 30C13.75 27.9303 12.0697 26.25 10 26.25C7.93032 26.25 6.25 27.9303 6.25 30V30" fill="#1565C0" stroke-width="1.66667" stroke="white"/>
+<path id="Vector_4" d="M15 18.3333C15 20.173 16.4936 21.6667 18.3333 21.6667C20.173 21.6667 21.6667 20.173 21.6667 18.3333C21.6667 16.4936 20.173 15 18.3333 15C16.4936 15 15 16.4936 15 18.3333V18.3333" fill="#007B6E" stroke-width="1.66667" stroke="white"/>
+<path id="Vector_5" d="M25 21.6667C25 23.5064 26.4936 25 28.3333 25C30.173 25 31.6667 23.5064 31.6667 21.6667C31.6667 19.8269 30.173 18.3333 28.3333 18.3333C26.4936 18.3333 25 19.8269 25 21.6667V21.6667" fill="#1565C0" stroke-width="1.66667" stroke="white"/>
+<path id="Vector_6" d="M27.5 10C27.5 12.2996 29.367 14.1667 31.6667 14.1667C33.9663 14.1667 35.8333 12.2996 35.8333 10C35.8333 7.70035 33.9663 5.83333 31.6667 5.83333C29.367 5.83333 27.5 7.70035 27.5 10V10" fill="#71F8E4" stroke-width="1.66667" stroke="#1565C0"/>
+</g>
+</svg>
